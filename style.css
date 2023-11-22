@@ -1,0 +1,119 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&family=Lemonada:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter,fallback-inter_regular,Arial,sans-serif;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-color:#F1F2F4;
+}
+nav{
+  display: flex;
+  padding: 14px 28px;
+  width: 100%;
+  align-items: center;
+  background-color: #fff;
+}
+.leftside{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 700px;
+}
+.logo{
+  margin-right: 32px;
+}
+.search{
+  display: flex;
+  height:40px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #f0f5ff;
+}
+.search>button{
+  padding: 8px 8px 8px 12px;
+  height: 40px; 
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.search>input{
+  width: 100%;
+  font-size: 17px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.rightside{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+}
+.button{
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button>img:first-child{
+  margin-right: 8px;
+}
+.button>img:last-child{
+  margin-left: 8px;
+}
+.button:hover{
+  color: white;
+  background-color: #2a55e5;
+}
+.button:hover>img{
+  fill:white;
+  filter: invert(100%) sepia(69%) saturate(0) hue-rotate(132deg) brightness(114%) contrast(101%);
+}
+.rightside>button{
+  padding: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.rightside>button:hover{
+  background: #fafafa;
+  border-radius: 8px;
+  border-color: #e0e0e0;
+}
+/* second section */
+section{
+  background-color: #fff;
+  padding: 0 16px;
+  margin-top: 8px;
+  min-height: 126px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.card{
+ border: 1px solid; 
+ display: inline-block;
+ padding: 12px;
+ text-align: center;
+}
+.card>img{
+  display: inline;
+  margin-bottom: 1rem;
+}
+.card>button{
+  display: block;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #333;
+  width: 100%;
+  
+}
