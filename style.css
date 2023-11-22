@@ -91,24 +91,30 @@ nav{
 /* second section */
 section{
   background-color: #fff;
-  padding: 0 16px;
+  padding: 0 55px;
+  margin: 0 auto;
   margin-top: 8px;
   min-height: 126px;
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  width: calc(100% - 36px);
 }
 .card{
- border: 1px solid; 
  display: inline-block;
  padding: 12px;
  text-align: center;
+ cursor: pointer;
 }
 .card>img{
   display: inline;
   margin-bottom: 1rem;
 }
-.card>button{
+.btn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn>button{
   display: block;
   border: none;
   background-color: transparent;
@@ -116,4 +122,22 @@ section{
   color: #333;
   width: 100%;
   
+}
+.arrow-svg{
+  position: relative;
+  top:2px;
+  
+}
+.arrow-svg::before{
+  content: "";
+    display: inline-block;
+    position: relative;
+    height: 6px;
+    width: 6px;
+    border-color: #111112;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    transform: scale(1) translateY(-50%) rotate(45deg);
+    transform-origin: 50% 50%;
+    transition: transform .3s;
 }
